@@ -11,7 +11,7 @@ int removeDuplicates(int arr[], int n) {
             uniqueIndex++;
             arr[uniqueIndex] = arr[i];
         }
-    }
+    }jyfu7fyf6yujd54str
     
     return uniqueIndex + 1;  // new size
 }

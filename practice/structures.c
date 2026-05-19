@@ -3,41 +3,61 @@ struct student
 {
     int rollno;
     char name[20];
-    int arr[5];
+    int marks[5];
     int total, percentage, average;
 };
 void main()
 {
-    struct student s1;
-    int i;
-    printf("enter roll no");
-    scanf("%d", &s1.rollno);
-    printf("enter name");
-    scanf("%s", &s1.name);
-    printf("my name is %s \nroll no is nigga %d", s1.name, s1.rollno);
-    s1.total = 0;
-    for (i = 0; i <= 4; i++)
-    {
-        printf("enter the number");
-        scanf("%d", &s1.arr[i]);
-        s1.total = s1.total + s1.arr[i];
-    }
-    s1.percentage = (s1.total * 100) / 500;
-    s1.average = s1.total / 5;
-    printf("your percentage is %d and total is %d and average is %d", s1.percentage, s1.total, s1.average);
-    if (s1.percentage >= 90 && s1.percentage <= 100)
+    //VARIABLES
+    int n, i,j;
 
-    {printf("your grade is A");
-    }
-    else if (s1.percentage >= 80 && s1.percentage <= 90)
+    //USER COUNT INPUT
+    printf("enter number of jailers");
+    scanf("%d", &n);
+
+    //STRUCTURE INSTANCE
+    struct student e[n];
+
+    //MAIN LOOP
+    for (i = 0; i < n; i++)
     {
-        printf("your grade is B you did the best bro the best ");
+        printf("Enter rollno \t");
+        scanf("%d", &e[i].rollno);
+
+        printf("Enter name\t");
+        scanf("%s", &e[i].name);
+
+        e[i].total = 0;
+        for (j = 0; j < 5; j++)
+        {
+            printf("Subject %d marks",j+1);
+            scanf("%d", &e[i].marks[j]);
+            e[i].total = e[i].total + e[i].marks[j];
+        }
+        e[i].percentage = (e[i].total * 100) / 500;
+        e[i].average = e[i].total / 5;
     }
-    else if (s1.percentage >= 70 && s1.percentage <= 80)
-    {
-        printf("your grade is c bro you did good just some more next time?");
-    }
-    else if (s1.percentage <= 60){
-        printf("your grade is d ");
+    
+    //PRINTING LOOP
+    for(i=0;i<n;i++){
+        
+        printf("\nmy name is %s \nroll no is nigga %d", e[i].name, e[i].rollno);
+        printf("\nyour percentage is %d \ntotal is %d \naverage is %d", e[i].percentage, e[i].total, e[i].average);
+        if (e[i].percentage >= 90 && e[i].percentage <= 100)
+        {
+            printf("\nyour grade is A");
+        }
+        else if (e[i].percentage >= 80 && e[i].percentage < 90)
+        {
+            printf("\nyour grade is B you did the best bro the best ");
+        }
+        else if (e[i].percentage >= 60 && e[i].percentage < 80)
+        {
+            printf("\nyour grade is c bro you did good just some more next time?");
+        }
+        else if (e[i].percentage < 60)
+        {
+            printf("\nyour grade is d ");
+        }
     }
 }

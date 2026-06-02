@@ -4,7 +4,7 @@ struct student
     int rollno;
     char name[20];
     int marks[5];
-    int total, percentage, average;
+    int sum, percentage, average;
 };
 void main()
 {
@@ -27,22 +27,22 @@ void main()
         printf("Enter name\t");
         scanf("%s", &e[i].name);
 
-        e[i].total = 0;
+        e[i].sum = 0;
         for (j = 0; j < 5; j++)
         {
             printf("Subject %d marks",j+1);
             scanf("%d", &e[i].marks[j]);
-            e[i].total = e[i].total + e[i].marks[j];
+            e[i].sum = e[i].sum + e[i].marks[j];
         }
-        e[i].percentage = (e[i].total * 100) / 500;
-        e[i].average = e[i].total / 5;
+        e[i].percentage = (e[i].sum * 100) / 500;
+        e[i].average = e[i].sum / 5;
     }
     
     //PRINTING LOOP
     for(i=0;i<n;i++){
         
         printf("\nmy name is %s \nroll no is nigga %d", e[i].name, e[i].rollno);
-        printf("\nyour percentage is %d \ntotal is %d \naverage is %d", e[i].percentage, e[i].total, e[i].average);
+        printf("\nyour percentage is %d \nsum is %d \naverage is %d", e[i].percentage, e[i].sum, e[i].average);
         if (e[i].percentage >= 90 && e[i].percentage <= 100)
         {
             printf("\nyour grade is A");

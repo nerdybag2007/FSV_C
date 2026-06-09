@@ -8,7 +8,7 @@ cout<<a<<" "<<b <<" ";
 for(i=1;i<=n;i++){
     sum=a+b;
     a=b;
-    cout<<sum" ";
+    cout<<sum;
     b=sum;
 }
 }

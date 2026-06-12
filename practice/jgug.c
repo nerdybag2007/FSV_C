@@ -4,7 +4,7 @@ struct student
     int rollno;
     char name[20];
     int arr[5];
-    int total, percentage, average;
+    int sum, percentage, average;
 };
 void main()
 {
@@ -16,16 +16,16 @@ void main()
     printf("enter name");
     scanf("%s", &s1.name);
     printf("my name is %s \nroll no is nigga %d", s1.name, s1.rollno);
-    s1.total = 0;
+    s1.sum = 0;
     for (i = 0; i <= 4; i++)
     {
         printf("enter the number");
         scanf("%d", &s1.arr[i]);
-        s1.total = s1.total + s1.arr[i];
+        s1.sum = s1.sum + s1.arr[i];
     }
-    s1.percentage = (s1.total * 100) / 500;
-    s1.average = s1.total / 5;
-    printf("your percentage is %d and total is %d and average is %d", s1.percentage, s1.total, s1.average);
+    s1.percentage = (s1.sum * 100) / 500;
+    s1.average = s1.sum / 5;
+    printf("your percentage is %d and sum is %d and average is %d", s1.percentage, s1.sum, s1.average);
     if (s1.percentage >= 90 && s1.percentage <= 100)
 
     {

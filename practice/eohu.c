@@ -3,16 +3,16 @@ int main(){
     int arr[5];
     int i;
     int sum;
-    float total=0, average, percentage;
+    float sum=0, average, percentage;
   for(i=0;i<5;i++){
     printf("enter users marks:");
     scanf("%d",&arr[i]);
-    total=total+arr[i];
+    sum=sum+arr[i];
   }
-    average=total/5;
-    percentage=(total*100)/500;
+    average=sum/5;
+    percentage=(sum*100)/500;
   
-printf("the total,average and percentage of users are are %f,%f,%f",total,average,percentage);
+printf("the sum,average and percentage of users are are %f,%f,%f",sum,average,percentage);
  if(percentage>=90){
         printf("bitch ass bullshit");
 

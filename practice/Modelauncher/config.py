@@ -1,4 +1,6 @@
 import customtkinter as ctk
+import webbrowser
+import subprocess
 
 # ----------------------------
 # Appearance
@@ -27,6 +29,8 @@ title.pack(pady=30)
 # ----------------------------
 # Buttons
 # ----------------------------
+def coding_mode():
+    print("Coding Mode Activated!")
 coding_btn = ctk.CTkButton(
     app,
     text="💻 Coding",

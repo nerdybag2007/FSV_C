@@ -33,7 +33,8 @@ def coding_mode():
     webbrowser.open("https://chatgpt.com")
     webbrowser.open("https://claude.ai")
     webbrowser.open("https://github.com")
-    subprocess.Popen(["code"])
+    import os
+    os.system("code")
 coding_btn = ctk.CTkButton(
     app,
     text="💻 Coding",

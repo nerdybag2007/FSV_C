@@ -1,6 +1,8 @@
 import customtkinter as ctk
 import webbrowser
 import subprocess
+import shutil
+
 
 # ----------------------------
 # Appearance
@@ -35,6 +37,7 @@ def coding_mode():
     webbrowser.open("https://github.com")
     import os
     os.system("code")
+    
 coding_btn = ctk.CTkButton(
     app,
     text="💻 Coding",

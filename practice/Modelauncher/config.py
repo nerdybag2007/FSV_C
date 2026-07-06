@@ -35,6 +35,9 @@ def coding_mode():
     webbrowser.open("https://chatgpt.com")
     webbrowser.open("https://claude.ai")
     webbrowser.open("https://github.com")
+    webbrowser.open("https://geekforgeeks.com")
+    webbrowser.open("https://hackerrank.com")
+    webbrowser.open("https://leetcode.com")
     import os
     os.system("code")
     

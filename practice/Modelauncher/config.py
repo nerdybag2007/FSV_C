@@ -11,3 +11,10 @@ app.geometry("500x400")
 
 # Keep window running
 app.mainloop()
+title = ctk.CTkLabel(
+    app,
+    text="Welcome, Gursimar 👋",
+    font=("Arial", 28, "bold")
+)
+
+title.pack(pady=30)

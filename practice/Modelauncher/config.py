@@ -46,6 +46,11 @@ def gaming_mode():
 def freedom_mode():
     print("Freedom Mode Activated! Add your chill/blocker commands here.")
     # Example: webbrowser.open("https://youtube.com")
+def set_status(text):
+    status_label.configure(text=text)
+
+def reset_status(event):
+    status_label.configure(text="Ready 🚀")
 
 
 # ----------------------------

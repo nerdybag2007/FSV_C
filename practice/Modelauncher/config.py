@@ -30,12 +30,15 @@ title.pack(pady=30)
 # Buttons
 # ----------------------------
 def coding_mode():
-    print("Coding Mode Activated!")
+    webbrowser.open("https://chatgpt.com")
+    webbrowser.open("https://claude.ai")
+    webbrowser.open("https://github.com")
 coding_btn = ctk.CTkButton(
     app,
     text="💻 Coding",
     width=250,
-    height=50
+    height=50,
+    command=coding_mode
 )
 coding_btn.pack(pady=10)
 

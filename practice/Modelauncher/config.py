@@ -32,6 +32,7 @@ title.pack(pady=30)
 # Buttons
 # ----------------------------
 
+
 def coding_mode():
     brave = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
 

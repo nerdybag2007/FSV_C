@@ -114,4 +114,12 @@ freedom_btn.pack(pady=12)
 # ----------------------------
 # Run the App
 # ----------------------------
+status_label = ctk.CTkLabel(
+    app,
+    text="Ready 🚀",
+    font=ctk.CTkFont(size=13),
+    text_color="gray"
+)
+
+status_label.pack(side="bottom", pady=20)
 app.mainloop()

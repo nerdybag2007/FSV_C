@@ -31,13 +31,20 @@ title.pack(pady=30)
 # ----------------------------
 # Buttons
 # ----------------------------
+
 def coding_mode():
-    webbrowser.open("https://chatgpt.com")
-    webbrowser.open("https://claude.ai")
-    webbrowser.open("https://github.com")
-    webbrowser.open("https://geekforgeeks.com")
-    webbrowser.open("https://hackerrank.com")
-    webbrowser.open("https://leetcode.com")
+    brave = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
+
+    subprocess.Popen([
+        brave,
+        "https://chatgpt.com",
+        "https://claude.ai",
+        "https://github.com",
+        "https://leetcode.com",
+        "https://www.hackerrank.com",
+    ])
+
+
     import os
     os.system("code")
     

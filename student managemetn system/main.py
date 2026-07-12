@@ -1,13 +1,17 @@
-def starter():
-    try:
+def start_program():
+    
         while True:
-            print("add student")
-            print("view student")
-            print("search student")
-            print("update student")
-            print("delete student")
-            print("exit student")
-            choice=int(input("enter your choice:"))
+            def display_menu():
+                print("add student")
+                print("view student")
+                print("search student")
+                print("update student")
+                print("delete student")
+                print("exit student")
+            try:
+                choice=int(input("enter your choice:"))
+            except ValueError:
+                print("invalid input please proceed with right value")
             if choice==6:
                 print("thankyou for choosing studnet managemnet system")
                 break
@@ -15,8 +19,6 @@ def starter():
                 print("feature coming soon")
             else:
                 print("invalid choice pleasse try again")
-    except ValueError:
-        print("error what the hell")
-starter()
+start_program()
         
 

@@ -2,12 +2,13 @@ def start_program():
     
         while True:
             def display_menu():
-                print("add student")
-                print("view student")
-                print("search student")
-                print("update student")
-                print("delete student")
-                print("exit student")
+                print("1.add student")
+                print("2.view student")
+                print("3.search student")
+                print("4.update student")
+                print("5.delete student")
+                print("6.exit ")
+            display_menu()
             try:
                 choice=int(input("enter your choice:"))
             except ValueError:

@@ -1,4 +1,6 @@
 n=int(input("please enter your number"))
+1=("add student")
+
 while n>0:
     if n==(6):
         print("thankyou for choosing student management system")
@@ -8,4 +10,3 @@ while n>0:
         break
     elif(n<1 or n>6):
         print("invalid choice! please try again later")
-        

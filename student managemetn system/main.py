@@ -1,16 +1,16 @@
-n=int(input("please enter your number"))
-1==("add student")
-2==("view student")
-3==("search student")
-4==("update student")
-5==("update student")
-6=("update student")
-while n>0:
-    if n==(6):
-        print("thankyou for choosing student management system")
+while True:
+    print("add student")
+    print("view student")
+    print("search student")
+    print("update student")
+    print("delete student")
+    print("exit student")
+    choice=int(input("enter your choice:"))
+    if choice==6:
+        print("thankyou for choosing studnet managemnet system")
         break
-    elif(n<=5 and n>=1):
+    elif 1<= choice<=5:
         print("feature coming soon")
-        break
-    elif(n<1 or n>6):
-        print("invalid choice! please try again later")
+    else:
+        print("invalid choice pleasse try again")
+

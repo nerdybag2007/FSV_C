@@ -13,6 +13,7 @@ def start_program():
                 choice=int(input("enter your choice:"))
             except ValueError:
                 print("invalid input please proceed with right value")
+                continue
             if choice==6:
                 print("thankyou for choosing studnet managemnet system")
                 break
@@ -21,5 +22,9 @@ def start_program():
             else:
                 print("invalid choice pleasse try again")
 start_program()
-        
+def add_student():
+     
+
+
+
 
